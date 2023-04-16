@@ -2,6 +2,8 @@ module github.com/hibiken/asynq/x
 
 go 1.22
 
+replace github.com/hibiken/asynq => ../
+
 require (
 	github.com/google/uuid v1.6.0
 	github.com/hibiken/asynq v0.25.0
