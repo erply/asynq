@@ -9,3 +9,6 @@ proto: internal/proto/asynq.proto
 .PHONY: lint
 lint:
 	golangci-lint run
+
+test: ##Runs unit tests with coverage
+	@go test -v ./... -count=1 -p 1
